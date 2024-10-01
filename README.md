@@ -6,6 +6,7 @@
 ### Used libraries:
 * **selenium 4.25.0** 
 * **pytest 8.3.3**
+* **python 3.11.6**
 
 ### Setting Selenoid
 #### Tests are run locally on Selenoid

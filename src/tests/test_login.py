@@ -19,4 +19,5 @@ def test_valid_login(driver):
     actual_account_text = main_page.get_text_head_bar_button()
     expect_account_text = "Юрий Петров"
 
-    assert expect_account_text in actual_account_text
+    assert expect_account_text == actual_account_text, \
+        f"Actual: {actual_account_text} is not equal to expected: {expect_account_text}"
