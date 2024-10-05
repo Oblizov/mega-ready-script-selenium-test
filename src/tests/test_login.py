@@ -1,6 +1,12 @@
+import allure
+
 from src.main.pages.main_page import MainHeaderBar
 from src.main.pages.login_modal import LoginModalWindow
 
+@allure.severity(allure.severity_level.CRITICAL)
+@allure.feature("Авторизация")
+@allure.story("Успешная авторизация")
+@allure.title("Тест авторизации с валидными данными")
 def test_valid_login(driver):
 
     main_page = MainHeaderBar(driver)

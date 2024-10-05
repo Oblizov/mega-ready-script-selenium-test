@@ -1,3 +1,4 @@
+import allure
 from selenium.common import TimeoutException
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as ec
@@ -12,6 +13,7 @@ class Base:
         self.driver = driver
         self.driver.implicitly_wait(self.TIME_OUT)
 
+    @allure.step("Открыть главную страницу")
     def open_page(self, url = URL):
         self.driver.get(url)
 
